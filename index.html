@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Student Registration System</title>
+  </head>
+<body class="relative min-h-screen overflow-hidden">
+
+  <!-- Background Image -->
+  <img 
+    src="/src/desktop.jpg"
+    class="hidden md:block absolute inset-0 w-full h-full object-cover z-0"
+    alt="background"
+  />
+
+    <img 
+     src="/src/mobile3.jpg"
+    class="lg:hidden md:hidden  absolute inset-0 w-full h-full object-cover z-0"
+    alt="background"
+  />
+    
+
+  <!-- Content Wrapper -->
+  <div class="relative z-10  min-h-screen p-2 md:p-4 lg:p-8">
+
+    <h1 class="text-2xl md:text-2xl lg:text-5xl text-red-400 font-bold text-center mb-4">
+      Student Registration System
+    </h1>
+
+    <div class="p-8 max-w-2xl mx-auto mb-8">
+      <p class="text-gray-700 text-lg leading-relaxed text-center">
+        This is a student registration system where user can add, delete and edit student information.
+      </p>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-8 justify-center">
+
+      <div class="rounded-xl shadow-2xl p-6 max-w-2xl bg-white">
+        <input type="text" placeholder="Enter Student Name" class="w-full p-2 mb-4 border-2 rounded-lg" />
+        <input type="number" placeholder="Enter Student Id" class="w-full p-2 mb-4 border-2 rounded-lg" />
+        <input type="tel" placeholder="Enter contact number" class="w-full p-2 mb-4 border-2 rounded-lg" />
+        <input type="email" placeholder="Enter emailId" class="w-full p-2 mb-4 border-2 rounded-lg" />
+      </div>
+
+      <!-- <div class="rounded-xl p-8 max-w-2xl">
+        <img src="/image1.png" class="w-full rounded-lg" />
+      </div> -->
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
