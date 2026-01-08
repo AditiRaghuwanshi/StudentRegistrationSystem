@@ -16,7 +16,7 @@
   />
 
     <img 
-     src="/src/mobile3.jpg"
+     src="/src/mobile2.png"
     class="lg:hidden md:hidden  absolute inset-0 w-full h-full object-cover z-0"
     alt="background"
   />
@@ -25,23 +25,36 @@
   <!-- Content Wrapper -->
   <div class="relative z-10  min-h-screen p-2 md:p-4 lg:p-8">
 
-    <h1 class="text-2xl md:text-2xl lg:text-5xl text-red-400 font-bold text-center mb-4">
-      Student Registration System
-    </h1>
+   <h1 class="text-2xl md:text-2xl lg:text-5xl 
+           lg:text-orange-400 text-red-800 font-bold 
+           text-center md:text-left lg:text-left
+           lg:ml-8 md:ml-4 ">
+  Student Registration System
+</h1>
 
-    <div class="p-8 max-w-2xl mx-auto mb-8">
-      <p class="text-gray-700 text-lg leading-relaxed text-center">
-        This is a student registration system where user can add, delete and edit student information.
+    <div class="p-8 max-w-2xl mx-auto lg:mx-0 md:mx-0 mb-4  ">
+      <p class="text-gray-700 text-lg leading-relaxed  font-bold  text-center md:text-left lg:text-left ">
+     Manage student information with options to add, edit, and remove records.
       </p>
     </div>
 
-    <div class="flex flex-col lg:flex-row gap-8 justify-center">
+    <div class="flex flex-col lg:flex-row gap-8 justify-center lg:justify-start lg:ml-8 md:ml-4 mt-[-22px] lg:mt-0 md:mt-0">
 
-      <div class="rounded-xl shadow-2xl p-6 max-w-2xl bg-white">
-        <input type="text" placeholder="Enter Student Name" class="w-full p-2 mb-4 border-2 rounded-lg" />
-        <input type="number" placeholder="Enter Student Id" class="w-full p-2 mb-4 border-2 rounded-lg" />
-        <input type="tel" placeholder="Enter contact number" class="w-full p-2 mb-4 border-2 rounded-lg" />
-        <input type="email" placeholder="Enter emailId" class="w-full p-2 mb-4 border-2 rounded-lg" />
+      <div class="rounded-2xl shadow-2xl p-6 max-w-2xl bg-white bg-white/20 backdrop-blur-lg border border-white/40 mx-auto lg:mx-0 md:mx-0">
+        <input type="text" placeholder="Enter Student Name" 
+        class="w-full p-2 mb-4 rounded-lg bg-white/60 text-gray-800 placeholder-gray-500 lg:focus:outline-pink-400 focus:outline-red-500 md:focus:outline-pink-400" />
+        <input type="number" placeholder="Enter Student Id" class="w-full p-2 mb-4 rounded-lg bg-white/60 text-gray-800 placeholder-gray-500 lg:focus:outline-pink-400 focus:outline-red-500 md:focus:outline-pink-400" />
+        <input type="tel" placeholder="Enter contact number" class="w-full p-2 mb-4 rounded-lg bg-white/60 text-gray-800 placeholder-gray-500 lg:focus:outline-pink-400  focus:outline-red-500 md:focus:outline-pink-400" />
+        <input type="email" placeholder="Enter emailId" class="w-full p-2 mb-4 rounded-lg bg-white/60 text-gray-800 placeholder-gray-500 lg:focus:outline-pink-400 focus:outline-red-500 md:focus:outline-pink-400" />
+     
+  <button 
+    class="w-full lg:w-1/2 md:w-1/2 py-3 rounded-lg 
+           bg-red-800 lg:bg-orange-200 md:bg-pink-800 lg:text-gray-600 md:text-gray-600 text-white font-semibold 
+           hover:bg-red-400 lg:hover:bg-orange-300 md:hover:bg-orange-300 
+           transition duration-300 shadow-lg">
+    Submit
+  </button>
+     
       </div>
 
       <!-- <div class="rounded-xl p-8 max-w-2xl">
