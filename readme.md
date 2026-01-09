@@ -1,0 +1,1 @@
+The Student Registration System is a frontend application built with HTML, Tailwind CSS, and JavaScript that implements CRUD operations on student data using browser LocalStorage. It supports adding, editing, and deleting student records with input validation, DOM manipulation, and persistent client-side storage, while maintaining a responsive UI across screen sizes.
