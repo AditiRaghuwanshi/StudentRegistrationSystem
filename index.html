@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,65 +8,166 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Student Registration System</title>
   </head>
-<body class="relative min-h-screen overflow-hidden">
+  <body class="relative min-h-screen overflow-hidden">
+    <!-- Background Image -->
+    <img
+      src="/src/desktop.jpg"
+      class="hidden md:block absolute inset-0 w-full h-full object-cover z-0"
+      alt="background"
+    />
 
-  <!-- Background Image -->
-  <img 
-    src="/src/desktop.jpg"
-    class="hidden md:block absolute inset-0 w-full h-full object-cover z-0"
-    alt="background"
-  />
+    <img
+      src="/src/mobile2.png"
+      class="lg:hidden md:hidden absolute inset-0 w-full h-full object-cover z-0"
+      alt="background"
+    />
 
-    <img 
-     src="/src/mobile2.png"
-    class="lg:hidden md:hidden  absolute inset-0 w-full h-full object-cover z-0"
-    alt="background"
-  />
-    
+    <!-- Content Wrapper -->
+    <div class="relative z-10 min-h-screen p-2 md:p-4 lg:p-8">
+      <h1
+        class="text-2xl md:text-2xl lg:text-5xl lg:text-orange-400 text-red-800 font-bold text-center md:text-left lg:text-left lg:ml-8 md:ml-4"
+      >
+        Student Registration System
+      </h1>
 
-  <!-- Content Wrapper -->
-  <div class="relative z-10  min-h-screen p-2 md:p-4 lg:p-8">
-
-   <h1 class="text-2xl md:text-2xl lg:text-5xl 
-           lg:text-orange-400 text-red-800 font-bold 
-           text-center md:text-left lg:text-left
-           lg:ml-8 md:ml-4 ">
-  Student Registration System
-</h1>
-
-    <div class="p-8 max-w-2xl mx-auto lg:mx-0 md:mx-0 mb-4  ">
-      <p class="text-gray-700 text-lg leading-relaxed  font-bold  text-center md:text-left lg:text-left ">
-     Manage student information with options to add, edit, and remove records.
-      </p>
-    </div>
-
-    <div class="flex flex-col lg:flex-row gap-8 justify-center lg:justify-start lg:ml-8 md:ml-4 mt-[-22px] lg:mt-0 md:mt-0">
-
-      <div class="rounded-2xl shadow-2xl p-6 max-w-2xl bg-white bg-white/20 backdrop-blur-lg border border-white/40 mx-auto lg:mx-0 md:mx-0">
-        <input type="text" placeholder="Enter Student Name" 
-        class="w-full p-2 mb-4 rounded-lg bg-white/60 text-gray-800 placeholder-gray-500 lg:focus:outline-pink-400 focus:outline-red-500 md:focus:outline-pink-400" />
-        <input type="number" placeholder="Enter Student Id" class="w-full p-2 mb-4 rounded-lg bg-white/60 text-gray-800 placeholder-gray-500 lg:focus:outline-pink-400 focus:outline-red-500 md:focus:outline-pink-400" />
-        <input type="tel" placeholder="Enter contact number" class="w-full p-2 mb-4 rounded-lg bg-white/60 text-gray-800 placeholder-gray-500 lg:focus:outline-pink-400  focus:outline-red-500 md:focus:outline-pink-400" />
-        <input type="email" placeholder="Enter emailId" class="w-full p-2 mb-4 rounded-lg bg-white/60 text-gray-800 placeholder-gray-500 lg:focus:outline-pink-400 focus:outline-red-500 md:focus:outline-pink-400" />
-     
-  <button 
-    class="w-full lg:w-1/2 md:w-1/2 py-3 rounded-lg 
-           bg-red-800 lg:bg-orange-200 md:bg-pink-800 lg:text-gray-600 md:text-gray-600 text-white font-semibold 
-           hover:bg-red-400 lg:hover:bg-orange-300 md:hover:bg-orange-300 
-           transition duration-300 shadow-lg">
-    Submit
-  </button>
-     
+      <div class="p-8 max-w-2xl mx-auto lg:mx-0 md:mx-0 mb-4">
+        <p
+          class="text-gray-700 text-lg leading-relaxed font-bold text-center md:text-left lg:text-left"
+        >
+          Manage student information with options to add, edit, and remove
+          records.
+        </p>
       </div>
 
-      <!-- <div class="rounded-xl p-8 max-w-2xl">
-        <img src="/image1.png" class="w-full rounded-lg" />
-      </div> -->
+      <div
+        class="flex flex-col lg:flex-row gap-8 justify-center lg:justify-start lg:ml-8 md:ml-4"
+      >
+        <div class="overflow-x-hidden shadow-2xl lg:ml-[-5px] lg:p-9 md:p-4 p-2 rounded-lg lg:max-w-2xl md:max-w-2xl  bg-white bg-white/20 backdrop-blur-lg border border-white/40 lg:mx-auto md:mx-auto lg:mx-0 md:mx-0">
 
+          <!-- Name -->
+          <div class="flex items-center gap-2 mb-4">
+            <input
+              type="text"
+              id="studentName"
+              placeholder="Enter Student Name"
+              class="flex-1 p-2 rounded-lg bg-white/60 text-gray-800 focus:outline-pink-400"
+            />
+
+            <button
+              id="editName"
+              class="px-4 py-2 rounded-lg 
+                     bg-red-800 lg:bg-orange-400 md:bg-orange-400 
+                     text-white lg:text-gray-900 md:text-gray-900 
+                     hover:opacity-90">
+              Edit
+            </button>
+
+            <button
+              id="deleteName"
+              class="px-3 lg:px-4 md:px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600">
+              Delete
+            </button>
+          </div>
+
+          <!-- Student ID -->
+          <div class="flex items-center gap-2 mb-4">
+            <input
+              type="number"
+              id="studentId"
+              placeholder="Enter Student ID"
+              class="flex-1 p-2 rounded-lg bg-white/60 text-gray-800"
+            />
+
+            <button
+              id="editId"
+              class="px-4 py-2 rounded-lg 
+                     bg-red-800 lg:bg-orange-400 md:bg-orange-400 
+                     text-white lg:text-gray-900 md:text-gray-900">
+              Edit
+            </button>
+
+            <button
+              id="deleteId"
+              class="px-3 lg:px-4 md:px-4 py-2 rounded-lg bg-red-500 text-white">
+              Delete
+            </button>
+          </div>
+
+          <!-- Contact -->
+          <div class="flex items-center gap-2 mb-4">
+            <input
+              type="tel"
+              id="contact"
+              maxlength="10"
+              placeholder="Enter Contact Number"
+              class="flex-1 p-2 rounded-lg bg-white/60 text-gray-800"
+            />
+
+            <button
+              id="editContact"
+              class="px-4 py-2 rounded-lg 
+                     bg-red-800 lg:bg-orange-400 md:bg-orange-400 
+                     text-white lg:text-gray-900 md:text-gray-900">
+              Edit
+            </button>
+
+            <button
+              id="deleteContact"
+              class="px-3 lg:px-4 md:px-4 py-2 rounded-lg bg-red-500 text-white">
+              Delete
+            </button>
+          </div>
+
+          <!-- Email -->
+          <div class="flex items-center gap-2 mb-6">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Email ID"
+              class="flex-1 p-2 rounded-lg bg-white/60 text-gray-800"
+            />
+
+            <button
+              id="editEmail"
+              class="px-4 py-2 rounded-lg 
+                     bg-red-800 lg:bg-orange-400 md:bg-orange-400 
+                     text-white lg:text-gray-900 md:text-gray-900">
+              Edit
+            </button>
+
+            <button
+              id="deleteEmail"
+              class="px-3 lg:px-4 md:px-4 py-2 rounded-lg bg-red-500 text-white">
+              Delete
+            </button>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-row md:flex-row gap-4">
+            <button
+              id="submit"
+              class="flex-1 py-3 rounded-lg 
+                     bg-red-800 lg:bg-orange-400 md:bg-orange-400 
+                     text-white lg:text-gray-900 md:text-gray-900 
+                     font-semibold hover:opacity-90 shadow-lg">
+              Submit
+            </button>
+
+            <button
+              id="clearForm"
+              class="flex-1 py-3 rounded-lg 
+                     bg-gray-600 text-white font-semibold hover:bg-gray-700 shadow-lg">
+              Clear
+            </button>
+          </div>
+
+        </div>
+      </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
+
+
+
